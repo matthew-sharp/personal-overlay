@@ -11,3 +11,8 @@ IUSE=""
 
 RDEPEND="games-engines/love"
 BDEPEND=""
+
+src_install() {
+  insinto /usr/share/${PN}
+  doins -r .
+}
